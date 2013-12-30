@@ -20,7 +20,7 @@ Or install it yourself as:
 
 In area of the code where dependencies are required, add this line:
 
-    require 'thor/vcr' if ENV['VCR']
+    require 'thor/vcr' if ENV['VCR'] == '1'
 
 In spec_helper.rb, add these lines:
 
