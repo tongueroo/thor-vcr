@@ -27,3 +27,7 @@ class Thor
     alias_method :dispatch, :dispatch_with_vcr
   end
 end
+
+VCR.configure do |config|
+  config.ignore_hosts 'codeclimate.com'
+end
